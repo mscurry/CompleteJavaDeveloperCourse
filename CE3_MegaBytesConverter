@@ -1,0 +1,17 @@
+// Coding Exercise 3 - Accurate MegaBytes Converter for Mastering Integer Math in Java
+public class MegaBytesConverter {
+    // write code here
+    public static void printMegaBytesAndKiloBytes(int kiloBytes)
+    {
+        if(kiloBytes < 0)
+        {
+            System.out.println("Invalid Value");
+        }
+        else
+        {
+            int MB = kiloBytes / 1024;
+            int remainingKiloBytes = kiloBytes % 1024;
+            System.out.println(kiloBytes + " KB = " + MB + " MB and " + remainingKiloBytes + " KB");
+        }
+    }
+}
